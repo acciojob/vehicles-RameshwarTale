@@ -14,12 +14,24 @@ public class Vehicle {
     public Vehicle(){
 
     }
-    public void setName(String name){
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getCurrentDirection(){
-        return this.currentDirection;
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
     }
 
     public void steer(int direction){
